@@ -1,0 +1,20 @@
+1)Create arraylist of keywords.
+add 20 different keyworks
+list.add("java");
+
+pass each item to search box and print accordingly.
+modify your arraylist 
+
+java-1234
+
+2) Store all keywords into a text file 
+read the text file and  repeat above steps.
+
+store keyword and results count into an arraylist.
+----
+
+after closing browser.
+print contents of arraylist that was updated each time 
+we looped.
+
+commit > push > share your github link
