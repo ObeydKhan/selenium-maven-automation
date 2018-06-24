@@ -85,15 +85,16 @@ public class DiceJobSearch {
 		List<String> titleList = new ArrayList();
 
 		while (temp != null) {
-			titleList.add(temp);
+			titleList.add(temp); 
 			temp=Breader.readLine();
 		}
 
 		for (int i = 0; i < titleList.size(); i++) {
 			String eachTitle = titleList.get(i);
-			int jobCount = searchJobs(eachTitle,driver);
-			titleList.remove(i);
-			titleList.add(i, eachTitle+"-"+jobCount);
+			int jobCount = DiceJobSearch.searchJobs(eachTitle,driver);
+			titleList.set(i, eachTitle+"-"+jobCount);
+//			titleList.remove(i);
+//			titleList.add(i, eachTitle+"-"+jobCount);
 		}
 
 		for (String string : titleList) {
